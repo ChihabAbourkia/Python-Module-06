@@ -6,7 +6,7 @@ print("alchemy.elements.create_fire():", alchemy.elements.create_fire())
 print("alchemy.elements.create_water():", alchemy.elements.create_water())
 print("alchemy.elements.create_earth():", alchemy.elements.create_earth())
 print("alchemy.elements.create_air():", alchemy.elements.create_air())
-print("Testing package-level access (controlled by __init__.py):")
+print("\nTesting package-level access (controlled by __init__.py):")
 try:
     print("alchemy.create_fire():",alchemy.create_fire())
 except AttributeError as e:
@@ -27,6 +27,6 @@ try:
 except AttributeError as e:
     print("alchemy.create_air():", e)
 
-print("Package metadata:")
+print("\nPackage metadata:")
 print("Version:", alchemy.__version__)
 print("Author:", alchemy.__author__)
